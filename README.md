@@ -1,1 +1,1 @@
-# my-first-website
+I created this website using a text editor on my phone(Spck editor) after my first month of learning to code. It felt really great as it ushered me into a world of endless possibilties. It made me believe in myself,so this website(as basic as it is) has a forever-place in my code heart.

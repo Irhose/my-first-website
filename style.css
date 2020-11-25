@@ -1,0 +1,122 @@
+
+body {background:linear-gradient(to right,black,midnightblue );
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+}
+*{box-sizing:border-box;
+} 
+
+
+#pic > img {
+  width:100%;
+  margin:1px solid black;
+	border-radius:5px;
+}
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;}
+.flex-container {
+  display: flex;
+  position:sticky; top:0;
+  justify-content: center;
+  z-index:1;
+  clear:right;
+}
+
+.flex-container > div {
+  background-color:white;
+  border:1px solid black;
+  margin: 5px;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius:15px;
+} 
+a:link, a:visited, a:hover, a:active{text-decoration: none;
+	color:black;
+}
+
+.barcontainer {
+  display: inline-block;
+  cursor: pointer;
+  position:relative;
+  z-index:2;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 0;
+  transition: 0.4s;
+  z-index:3;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.dropdown{display:none;
+	background-color:black;
+	opacity:0.9;
+	position:absolute;
+	z-index: 2;
+	min-width: 160px;
+	
+}
+.dropdown a{color:white;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.barcontainer:hover .dropdown{display:block;
+}
+.quote{display:block;
+	color:white;
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+}
+.grid1{display:grid;
+background-color:white;
+justify-items: center;
+grid-template-columns:repeat(auto-fit, minmax(15ch,1fr));
+padding:10px;
+grid-gap:20px;
+border-radius:15px;
+}
+.grid1 > div {
+	padding:5px;
+	margin: 1px solid black;
+	border-radius:15px;
+	box-shadow: 5px 8px 6px -6px #42445A;
+}
+.grid1 > div img{width:150px;
+height:150px;
+border-radius:25px;
+border:1px solid black;
+box-shadow: 5px 8px 6px -6px #42445A;
+}
+.grid1 > div img:hover{opacity:0.5;
+	border-radius:25px;
+}
+.t{color:black;
+text-align:center;
+	font-family: 'Quicksand', sans-serif;
+}
+div > img{opacity:initial;
+}
+.fc {display:flex;
+background:#002859;
+border-radius:5px;
+justify-content:space-between;
+}
+.fc div{margin:10px;
+	font-size: 1rem;
+} 
